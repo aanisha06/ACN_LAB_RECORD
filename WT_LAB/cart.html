@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .top-frame {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo-home img {
+            height: 50px;
+        }
+        .site-name-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .site-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        .left-frame {
+            width: 100px;
+            padding: 10px;
+            border-right: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+        .left-frame a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #000;
+        }
+        .right-frame {
+            flex: 1;
+            padding: 20px;
+        }
+        .right-frame table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .right-frame th, .right-frame td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        .right-frame tr:last-child td {
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-frame">
+            <div class="logo-home">
+                <img src="logo.png" alt="Online Book Store Logo">
+                <a href="HomePage.html">Home</a>
+            </div>
+            <div class="site-name-nav">
+                <div class="site-name">Online Book Store</div>
+                <div class="nav-links">
+                    <a href="login.html">Login</a>
+                    <a href="registration.html">Registration</a>
+                    <a href="catalogue.html">Catalogue</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left-frame">
+                <a href="catalogue.html?category=CSE">CSE</a>
+                <a href="catalogue.html?category=ECE">ECE</a>
+                <a href="catalogue.html?category=EEE">EEE</a>
+                <a href="catalogue.html?category=CIVIL">CIVIL</a>
+            </div>
+            <div class="right-frame">
+                <table>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr> 
+                        <td>Java 2</td>
+                        <td>$35.5</td>
+                        <td>2</td>
+                        <td>$70</td>
+                    </tr>
+                    <tr>
+                        <td>XML Bible</td>
+                        <td>$40.5</td>
+                        <td>1</td>
+                        <td>$40.5</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Total Amount - $130.5</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
